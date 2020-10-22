@@ -1,0 +1,926 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  title Edit_Page
+  style.
+    html {
+    background: url(https://i.pinimg.com/originals/70/ea/69/70ea69b138f00d66435476bfc1d72199.png) no-repeat center fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1540px 760px;
+    }
+    .div_1 {
+    margin-bottom: 15px;
+    padding: -2px;
+    width: 40%;
+    margin-top: 200px;
+    }
+    .div_2 {
+    margin-bottom: 15px;
+    padding: -2px;
+    width: 40%;
+    margin-top: 40px;
+    }
+    .success {
+    background-color: #f8ec7e;
+    box-sizing: border-box;
+    border: 1px solid #f8cb37;
+    border-radius: 4px;
+    text-align: center;
+    }
+    /*----------------------------------chechmark_1-----------------------------*/
+    .container1 {
+    display: block;
+    position: absolute;
+    padding-left: 710px;
+    margin-top: -335px;
+    font-size: 20px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    }
+    /* Hide the browser's default radio button */
+    .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    }
+    .checkmark_1 {
+    position: absolute;
+    top: 3px;
+    left: 650px;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(226, 141, 212);
+    border-radius: 50%;
+    }
+    /* On mouse-over, add a grey background color */
+    .container1:hover input~.checkmark_1 {
+    background-color: rgb(224, 90, 202);
+    }
+    /* When the radio button is checked, add a blue background */
+    .container1 input:checked~.checkmark_1 {
+    background-color: rgb(199, 15, 168);
+    }
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark_1:after {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+    /* Show the indicator (dot/circle) when checked */
+    .container1 input:checked~.checkmark_1:after {
+    display: block;
+    }
+    /* Style the indicator (dot/circle) */
+    .container1 .checkmark_1:after {
+    top: 4px;
+    left: 9px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+    /*----------------------------------chechmark_2-----------------------------*/
+    .container2 {
+    display: block;
+    position: absolute;
+    padding-left: 710px;
+    margin-top: -240px;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    }
+    .container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    }
+    .checkmark_2 {
+    position: absolute;
+    top: 2px;
+    left: 650px;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(226, 141, 212);
+    border-radius: 50%;
+    }
+    .container2:hover input~.checkmark_2 {
+    background-color: rgb(224, 90, 202);
+    }
+    .container2 input:checked~.checkmark_2 {
+    background-color: rgb(199, 15, 168);
+    }
+    .checkmark_2:after {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+    .container2 input:checked~.checkmark_2:after {
+    display: block;
+    }
+    .container2 .checkmark_2:after {
+    top: 4px;
+    left: 9px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+    /*----------------------------------chechmark_3-----------------------------*/
+    .container3 {
+    display: block;
+    position: absolute;
+    padding-left: 710px;
+    margin-top: -150px;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    }
+    .container3 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    }
+    .checkmark_3 {
+    position: absolute;
+    top: 4px;
+    left: 650px;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(226, 141, 212);
+    border-radius: 50%;
+    }
+    .container3:hover input~.checkmark_3 {
+    background-color: rgb(224, 90, 202);
+    }
+    .container3 input:checked~.checkmark_3 {
+    background-color: rgb(199, 15, 168);
+    }
+    .checkmark_3:after {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+    .container3 input:checked~.checkmark_3:after {
+    display: block;
+    }
+    .container3 .checkmark_3:after {
+    top: 4px;
+    left: 9px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+    /*----------------------------------chechmark_4-----------------------------*/
+    .container4 {
+    display: block;
+    position: absolute;
+    padding-left: 710px;
+    margin-top: -57px;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    }
+    .container4 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    }
+    .checkmark_4 {
+    position: absolute;
+    top: 3px;
+    left: 650px;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(226, 141, 212);
+    border-radius: 50%;
+    }
+    .container4:hover input~.checkmark_4 {
+    background-color: rgb(224, 90, 202);
+    }
+    .container4 input:checked~.checkmark_4 {
+    background-color: rgb(199, 15, 168);
+    }
+    .checkmark_4:after {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+    .container4 input:checked~.checkmark_4:after {
+    display: block;
+    }
+    .container4 .checkmark_4:after {
+    top: 4px;
+    left: 9px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+    /*----------------------------------dropdrow_1-----------------------------*/
+    .custom-select {
+    position: relative;
+    left: 980px;
+    top: -338px;
+    font-family: Arial;
+    }
+    .custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+    }
+    .select-selected {
+    background-color: rgb(219, 84, 136);
+    }
+    /*style the arrow inside the select element:*/
+    .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgb(204, 29, 29) transparent transparent transparent;
+    }
+    /*point the arrow upwards when the select box is open (active):*/
+    .select-selected.select-arrow-active:after {
+    border-color: transparent transparent rgb(185, 21, 21) transparent;
+    top: 7px;
+    }
+    /*style the items (options), including the selected item:*/
+    .select-items div,
+    .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    }
+    /*style items (options):*/
+    .select-items {
+    position: absolute;
+    background-color: rgb(219, 84, 136);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    }
+    /*hide the items when the select box is closed:*/
+    .select-hide {
+    display: none;
+    }
+    .select-items div:hover,
+    .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+    }
+    /*----------------------------------dropdrow_2-----------------------------*/
+    .custom-select2 {
+    position: relative;
+    left: 980px;
+    top: -286px;
+    font-family: Arial;
+    }
+    .custom-select2 select {
+    display: none;
+    }
+    .select-selected {
+    background-color: rgb(219, 84, 136);
+    }
+    .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgb(204, 29, 29) transparent transparent transparent;
+    }
+    .select-selected.select-arrow-active:after {
+    border-color: transparent transparent rgb(185, 21, 21) transparent;
+    top: 7px;
+    }
+    .select-items div,
+    .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    }
+    .select-items {
+    position: absolute;
+    background-color: rgb(219, 84, 136);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    }
+    .select-hide {
+    display: none;
+    }
+    .select-items div:hover,
+    .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+    }
+    /*----------------------------------dropdrow_3-----------------------------*/
+    .custom-select3 {
+    position: relative;
+    left: 980px;
+    top: -232px;
+    font-family: Arial;
+    }
+    .custom-select3 select {
+    display: none;
+    }
+    .select-selected {
+    background-color: rgb(219, 84, 136);
+    }
+    .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgb(204, 29, 29) transparent transparent transparent;
+    }
+    .select-selected.select-arrow-active:after {
+    border-color: transparent transparent rgb(185, 21, 21) transparent;
+    top: 7px;
+    }
+    .select-items div,
+    .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    }
+    .select-items {
+    position: absolute;
+    background-color: rgb(219, 84, 136);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    }
+    .select-hide {
+    display: none;
+    }
+    .select-items div:hover,
+    .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+    }
+    /*----------------------------------dropdrow_4-----------------------------*/
+    .custom-select4 {
+    position: relative;
+    left: 980px;
+    top: -178px;
+    font-family: Arial;
+    }
+    .custom-select4 select {
+    display: none;
+    }
+    .select-selected {
+    background-color: rgb(219, 84, 136);
+    }
+    .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgb(204, 29, 29) transparent transparent transparent;
+    }
+    .select-selected.select-arrow-active:after {
+    border-color: transparent transparent rgb(185, 21, 21) transparent;
+    top: 7px;
+    }
+    .select-items div,
+    .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    }
+    .select-items {
+    position: absolute;
+    background-color: rgb(219, 84, 136);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    }
+    .select-hide {
+    display: none;
+    }
+    .select-items div:hover,
+    .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+    }
+    /*----------------------------------botton submit-----------------------------*/
+    .container {
+    position: relative;
+    width: 100%;
+    max-width: 8000px;
+    }
+    .container .button-submit {
+    position: relative;
+    right: -46%;
+    bottom: 110px;
+    border: none;
+    border-radius: 12px;
+    width: 14.5%;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 21px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Arial';
+    color: #4a235a;
+    box-shadow: 0 9px #999;
+    background-color: #d7bde2;
+    }
+    .button-submit:hover {
+    box-shadow: #d7bde2;
+    }
+    .button-submit:active {
+    background-color: #b787cc;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    }
+    /*----------------------------------QR Popup-----------------------------*/
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    * {
+    box-sizing: border-box;
+    }
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+    background-color: rgb(235, 56, 241);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    top: 29px;
+    right: 110px;
+    width: 280px;
+    font-size: medium;
+    }
+    /* The popup form - hidden by default */
+    .form-popup {
+    display: none;
+    position: fixed;
+    top: 78px;
+    right: 40px;
+    border: 5px solid #f1f1f1;
+    z-index: 9;
+    }
+    /* Add styles to the form container */
+    .form-container {
+    max-width: 380px;
+    padding: 38px;
+    background-color: white;
+    }
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+    background-color: red;
+    width: 100%;
+    height: 50px;
+    font-size: medium;
+    color: rgb(246, 249, 252);
+    }
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover,
+    .open-button:hover {
+    opacity: 1;
+    }
+// -----------------------------ส่วนของ text ------------------------------------------------
+.div_1
+  .success
+    p
+      strong 204321 Database System 1
+.div_2
+  .success
+    p
+      strong 204451 Algorithm Design &amp; Analysis
+.div_2
+  .success
+    p
+      strong 204361 Software Engineering
+.div_2
+  .success
+    p
+      strong 204341 Operating System
+// -----------------------------ส่วนของ checkbox ------------------------------------------------
+label.container1
+  | &#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;
+  input(type='checkbox' checked='checked')
+  span.checkmark_1
+label.container2
+  | &#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;
+  input(type='checkbox')
+  span.checkmark_2
+label.container3
+  | &#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;
+  input(type='checkbox')
+  span.checkmark_3
+label.container4
+  | &#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;
+  input(type='checkbox')
+  span.checkmark_4
+// -----------------------------ส่วนของ dropdown ------------------------------------------------
+.custom-select(style='width:180px;')
+  select
+    option(value='0') &#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;&#xE25;&#xE48;&#xE27;&#xE07;&#xE2B;&#xE19;&#xE49;&#xE32;
+    option(value='1') 3 &#xE27;&#xE31;&#xE19;
+    option(value='2') 5 &#xE27;&#xE31;&#xE19;
+    option(value='3') 1 &#xE2D;&#xE32;&#xE17;&#xE34;&#xE15;&#xE22;&#xE4C;
+script.
+  var x, i, j, l, ll, selElmnt, a, b, c;
+  /*look for any elements with the class "custom-select":*/
+  x = document.getElementsByClassName("custom-select");
+  l = x.length;
+  for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+  /*for each option in the original select element,
+  create a new DIV that will act as an option item:*/
+  c = document.createElement("DIV");
+  c.innerHTML = selElmnt.options[j].innerHTML;
+  c.addEventListener("click", function(e) {
+  /*when an item is clicked, update the original select box,
+  and the selected item:*/
+  var y, i, k, s, h, sl, yl;
+  s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+  sl = s.length;
+  h = this.parentNode.previousSibling;
+  for (i = 0; i < sl; i++) {
+  if (s.options[i].innerHTML == this.innerHTML) {
+  s.selectedIndex = i;
+  h.innerHTML = this.innerHTML;
+  y = this.parentNode.getElementsByClassName("same-as-selected");
+  yl = y.length;
+  for (k = 0; k < yl; k++) {
+  y[k].removeAttribute("class");
+  }
+  this.setAttribute("class", "same-as-selected");
+  break;
+  }
+  }
+  h.click();
+  });
+  b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+  /*when the select box is clicked, close any other select boxes,
+  and open/close the current select box:*/
+  e.stopPropagation();
+  closeAllSelect(this);
+  this.nextSibling.classList.toggle("select-hide");
+  this.classList.toggle("select-arrow-active");
+  });
+  }
+  function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+  if (elmnt == y[i]) {
+  arrNo.push(i)
+  } else {
+  y[i].classList.remove("select-arrow-active");
+  }
+  }
+  for (i = 0; i < xl; i++) {
+  if (arrNo.indexOf(i)) {
+  x[i].classList.add("select-hide");
+  }
+  }
+  }
+  /*if the user clicks anywhere outside the select box,
+  then close all select boxes:*/
+  document.addEventListener("click", closeAllSelect);
+// -----------------------------ส่วนของ dropdown2 ------------------------------------------------
+.custom-select2(style='width:180px;')
+  select
+    option(value='0') &#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;&#xE25;&#xE48;&#xE27;&#xE07;&#xE2B;&#xE19;&#xE49;&#xE32;
+    option(value='1') 3 &#xE27;&#xE31;&#xE19;
+    option(value='2') 5 &#xE27;&#xE31;&#xE19;
+    option(value='3') 1 &#xE2D;&#xE32;&#xE17;&#xE34;&#xE15;&#xE22;&#xE4C;
+script.
+  var x, i, j, l, ll, selElmnt, a, b, c;
+  /*look for any elements with the class "custom-select":*/
+  x = document.getElementsByClassName("custom-select2");
+  l = x.length;
+  for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+  /*for each option in the original select element,
+  create a new DIV that will act as an option item:*/
+  c = document.createElement("DIV");
+  c.innerHTML = selElmnt.options[j].innerHTML;
+  c.addEventListener("click", function(e) {
+  /*when an item is clicked, update the original select box,
+  and the selected item:*/
+  var y, i, k, s, h, sl, yl;
+  s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+  sl = s.length;
+  h = this.parentNode.previousSibling;
+  for (i = 0; i < sl; i++) {
+  if (s.options[i].innerHTML == this.innerHTML) {
+  s.selectedIndex = i;
+  h.innerHTML = this.innerHTML;
+  y = this.parentNode.getElementsByClassName("same-as-selected");
+  yl = y.length;
+  for (k = 0; k < yl; k++) {
+  y[k].removeAttribute("class");
+  }
+  this.setAttribute("class", "same-as-selected");
+  break;
+  }
+  }
+  h.click();
+  });
+  b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+  /*when the select box is clicked, close any other select boxes,
+  and open/close the current select box:*/
+  e.stopPropagation();
+  closeAllSelect(this);
+  this.nextSibling.classList.toggle("select-hide");
+  this.classList.toggle("select-arrow-active");
+  });
+  }
+  function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+  if (elmnt == y[i]) {
+  arrNo.push(i)
+  } else {
+  y[i].classList.remove("select-arrow-active");
+  }
+  }
+  for (i = 0; i < xl; i++) {
+  if (arrNo.indexOf(i)) {
+  x[i].classList.add("select-hide");
+  }
+  }
+  }
+  document.addEventListener("click", closeAllSelect);
+// -----------------------------ส่วนของ dropdown3 ------------------------------------------------
+.custom-select3(style='width:180px;')
+  select
+    option(value='0') &#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;&#xE25;&#xE48;&#xE27;&#xE07;&#xE2B;&#xE19;&#xE49;&#xE32;
+    option(value='1') 3 &#xE27;&#xE31;&#xE19;
+    option(value='2') 5 &#xE27;&#xE31;&#xE19;
+    option(value='3') 1 &#xE2D;&#xE32;&#xE17;&#xE34;&#xE15;&#xE22;&#xE4C;
+script.
+  var x, i, j, l, ll, selElmnt, a, b, c;
+  /*look for any elements with the class "custom-select":*/
+  x = document.getElementsByClassName("custom-select3");
+  l = x.length;
+  for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+  /*for each option in the original select element,
+  create a new DIV that will act as an option item:*/
+  c = document.createElement("DIV");
+  c.innerHTML = selElmnt.options[j].innerHTML;
+  c.addEventListener("click", function(e) {
+  /*when an item is clicked, update the original select box,
+  and the selected item:*/
+  var y, i, k, s, h, sl, yl;
+  s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+  sl = s.length;
+  h = this.parentNode.previousSibling;
+  for (i = 0; i < sl; i++) {
+  if (s.options[i].innerHTML == this.innerHTML) {
+  s.selectedIndex = i;
+  h.innerHTML = this.innerHTML;
+  y = this.parentNode.getElementsByClassName("same-as-selected");
+  yl = y.length;
+  for (k = 0; k < yl; k++) {
+  y[k].removeAttribute("class");
+  }
+  this.setAttribute("class", "same-as-selected");
+  break;
+  }
+  }
+  h.click();
+  });
+  b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+  /*when the select box is clicked, close any other select boxes,
+  and open/close the current select box:*/
+  e.stopPropagation();
+  closeAllSelect(this);
+  this.nextSibling.classList.toggle("select-hide");
+  this.classList.toggle("select-arrow-active");
+  });
+  }
+  function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+  if (elmnt == y[i]) {
+  arrNo.push(i)
+  } else {
+  y[i].classList.remove("select-arrow-active");
+  }
+  }
+  for (i = 0; i < xl; i++) {
+  if (arrNo.indexOf(i)) {
+  x[i].classList.add("select-hide");
+  }
+  }
+  }
+  document.addEventListener("click", closeAllSelect);
+// -----------------------------ส่วนของ dropdown4 ------------------------------------------------
+.custom-select4(style='width:180px;')
+  select
+    option(value='0') &#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;&#xE25;&#xE48;&#xE27;&#xE07;&#xE2B;&#xE19;&#xE49;&#xE32;
+    option(value='1') 3 &#xE27;&#xE31;&#xE19;
+    option(value='2') 5 &#xE27;&#xE31;&#xE19;
+    option(value='3') 1 &#xE2D;&#xE32;&#xE17;&#xE34;&#xE15;&#xE22;&#xE4C;
+script.
+  var x, i, j, l, ll, selElmnt, a, b, c;
+  /*look for any elements with the class "custom-select":*/
+  x = document.getElementsByClassName("custom-select4");
+  l = x.length;
+  for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+  /*for each option in the original select element,
+  create a new DIV that will act as an option item:*/
+  c = document.createElement("DIV");
+  c.innerHTML = selElmnt.options[j].innerHTML;
+  c.addEventListener("click", function(e) {
+  /*when an item is clicked, update the original select box,
+  and the selected item:*/
+  var y, i, k, s, h, sl, yl;
+  s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+  sl = s.length;
+  h = this.parentNode.previousSibling;
+  for (i = 0; i < sl; i++) {
+  if (s.options[i].innerHTML == this.innerHTML) {
+  s.selectedIndex = i;
+  h.innerHTML = this.innerHTML;
+  y = this.parentNode.getElementsByClassName("same-as-selected");
+  yl = y.length;
+  for (k = 0; k < yl; k++) {
+  y[k].removeAttribute("class");
+  }
+  this.setAttribute("class", "same-as-selected");
+  break;
+  }
+  }
+  h.click();
+  });
+  b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+  /*when the select box is clicked, close any other select boxes,
+  and open/close the current select box:*/
+  e.stopPropagation();
+  closeAllSelect(this);
+  this.nextSibling.classList.toggle("select-hide");
+  this.classList.toggle("select-arrow-active");
+  });
+  }
+  function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+  if (elmnt == y[i]) {
+  arrNo.push(i)
+  } else {
+  y[i].classList.remove("select-arrow-active");
+  }
+  }
+  for (i = 0; i < xl; i++) {
+  if (arrNo.indexOf(i)) {
+  x[i].classList.add("select-hide");
+  }
+  }
+  }
+  document.addEventListener("click", closeAllSelect);
+// -----------------------------ส่วนของ button submit ------------------------------------------------
+label.container
+  button.button-submit
+    b Submit
+// -----------------------------ส่วนของ QR CODE Popup ------------------------------------------------
+button.open-button(onclick='openForm()') Open QR Code
+#myForm.form-popup
+  form.form-container(action='/action_page.php')
+    font(size='10') QR CODE
+    p ***QR code &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;***
+    img(src='img/test.jpg' width='250px ' height='250px ' vspace='20' hspace='40')
+    button.btn.cancel(type='button' onclick='closeForm()') Close
+script.
+  function openForm() {
+  document.getElementById("myForm").style.display = "block";
+  }
+  function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+  }
+

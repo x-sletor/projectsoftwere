@@ -1,0 +1,45 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Login_Html
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css' integrity='sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' crossorigin='anonymous')
+  script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx' crossorigin='anonymous')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  style.
+    html,
+    body {
+    background: url(https://i.pinimg.com/originals/0c/64/33/0c6433d6863871bafac3721b05f04422.png) no-repeat center fixed;
+    background-size: cover;
+    height: 100%;
+    color: aliceblue;
+    }
+.container.d-flex.justify-content-center.h-100
+  .jumbotron.my-auto(style='background-color: blueviolet;')
+    img.rounded.mx-auto.d-block(src='https://i.pinimg.com/originals/54/05/d7/5405d77c51fb46a0cbf26cb96fe4da4d.png' alt='' width='28%' height='18% ' vspace='18')
+    form(class="form-signin" method="POST" action="/auth/login")
+      h2 Please Login
+      .input-group.mb-3
+        .input-group-prepend
+          span.input-group-text
+            i.fa.fa-user
+        input(type="text" name="username" id="username" class="form-control" placeholder="Username" required)
+      .input-group.mb-3
+        .input-group-prepend
+          span.input-group-text
+            i.fa.fa-key
+        input(type="password" name="password" id="password" class="form-control" placeholder="Password" required)
+        
+      .form-group.form-check
+        label.form-check-label
+          input.form-check-input(type='checkbox')
+          |  Remember me
+      
+      // a(href='m_stu.html')
+      // a(href='/index')
+      button.btn.btn-primary.form-control.btn-warning(type='submit') Login
+      if message
+          p.alert.alert-danger #{message}
+      //a(href="/register", class="btn btn-link") Don't have an account?
+      

@@ -1,0 +1,124 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(to="stylesheet" href="style.css")
+    title Main_Html
+    style(media="screen").
+      html {
+      background: url(https://i.pinimg.com/originals/3f/3e/d2/3f3ed2bbbb27c6c9b30e53f384b9438f.png) no-repeat center fixed;
+      background-size: cover;
+      }
+      .container {
+      position: relative;
+      width: 100%;
+      max-width: 10000px;
+      }
+      .container img {
+      width: 1000%;
+      height: auto;
+      }
+      .container .button-student {
+      position: relative;
+      right: -46%;
+      bottom: -320px;
+      border: none;
+      border-radius: 12px;
+      width: 50%;
+      height: 60px;
+      margin: auto;
+      margin-bottom: 100px;
+      padding: 15px 25px;
+      text-align: center;
+      font-size: 29px;
+      cursor: pointer;
+      outline: none;
+      font-family: 'Arial';
+      text-transform: uppercase;
+      color: #4a235a;
+      box-shadow: 0 9px #999;
+      background-color: #d7bde2;
+      }
+      .button-student:hover {
+      box-shadow: #d7bde2;
+      }
+      .button-student:active {
+      background-color: #b787cc;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+      }
+      .container .button-teacher {
+      position: absolute;
+      right: 4%;
+      bottom: -450px;
+      border: none;
+      border-radius: 12px;
+      width: 50%;
+      height: 37%;
+      margin: auto;
+      margin-bottom: 100px;
+      padding: 15px 25px;
+      text-align: center;
+      font-size: 29px;
+      cursor: pointer;
+      outline: none;
+      font-family: 'Arial';
+      text-transform: uppercase;
+      color: #4a235a;
+      box-shadow: 0 9px #999;
+      background-color: #d7bde2;
+      }
+      .button-teacher:hover {
+      background-color: #d7bde2;
+      }
+      .button-teacher:active {
+      background-color: #b787cc;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+      }
+      .container .button-staff {
+      position: absolute;
+      right: -29%;
+      bottom: -480px;
+      border: none;
+      border-radius: 12px;
+      width: 50%;
+      height: 38%;
+      margin: auto;
+      margin-right: 500px;
+      padding: 15px 25px;
+      text-align: center;
+      font-size: 29px;
+      font-family: 'Arial';
+      cursor: pointer;
+      outline: none;
+      text-transform: uppercase;
+      color: #4a235a;
+      box-shadow: 0 9px #999;
+      background-color: #d7bde2;
+      }
+      .button-staff:hover {
+      background-color: #d7bde2;
+      }
+      .button-staff:active {
+      background-color: #b787cc;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+      }
+  body
+    //
+      <h1 align="center">ระบบจัดการเรียนการสอน ภาควิชาวิทยาการคอมพิวเตอร์</h1>
+      <img src='img/1.png' width="200px " height="200px " vspace="80 " hspace="120 " alt=" " srcset=" ">
+      <img src='img/2.jpg' width="200px " height="200px " vspace="80 " hspace="120 " alt=" " srcset=" ">
+      <img src='img/3.jpg' width="200px " height="200px " vspace="80 " hspace="120 " alt=" " srcset=" ">
+    .container
+      a(href='/login')
+        button.button-student
+          b Student
+      a(href='/loginteacher')
+        button.button-teacher
+          b Teacher
+      a(href='/loginstaff')
+        button.button-staff
+          b Staff
