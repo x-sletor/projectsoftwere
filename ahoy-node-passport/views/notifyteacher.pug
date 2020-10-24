@@ -243,7 +243,7 @@ head
     .custom-select {
     position: relative;
     left: 980px;
-    top: -338px;
+    top: -245px;
     font-family: Arial;
     }
     .custom-select select {
@@ -300,7 +300,7 @@ head
     .custom-select2 {
     position: relative;
     left: 980px;
-    top: -286px;
+    top: -190px;
     font-family: Arial;
     }
     .custom-select2 select {
@@ -351,7 +351,7 @@ head
     .custom-select3 {
     position: relative;
     left: 980px;
-    top: -232px;
+    top: -132px;
     font-family: Arial;
     }
     .custom-select3 select {
@@ -458,7 +458,7 @@ head
     .container .button-submit {
     position: relative;
     right: -46%;
-    bottom: 110px;
+    bottom: 50px;
     border: none;
     border-radius: 12px;
     width: 14.5%;
@@ -540,17 +540,13 @@ head
 .div_2
   .success
     p
-      strong 204451 Algorithm Design &amp; Analysis
+      strong 204100 IT and Modren Life
 .div_2
   .success
     p
       strong 204361 Software Engineering
-.div_2
-  .success
-    p
-      strong 204341 Operating System
 // -----------------------------ส่วนของ checkbox ------------------------------------------------
-label.container1
+label.container4
   | &#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;
   input(type='checkbox' checked='checked')
   span.checkmark_1
@@ -562,10 +558,6 @@ label.container3
   | &#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;
   input(type='checkbox')
   span.checkmark_3
-label.container4
-  | &#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;
-  input(type='checkbox')
-  span.checkmark_4
 // -----------------------------ส่วนของ dropdown ------------------------------------------------
 .custom-select(style='width:180px;')
   select
@@ -821,100 +813,19 @@ script.
   }
   document.addEventListener("click", closeAllSelect);
 // -----------------------------ส่วนของ dropdown4 ------------------------------------------------
-.custom-select4(style='width:180px;')
-  select
-    option(value='0') &#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;&#xE25;&#xE48;&#xE27;&#xE07;&#xE2B;&#xE19;&#xE49;&#xE32;
-    option(value='1') 3 &#xE27;&#xE31;&#xE19;
-    option(value='2') 5 &#xE27;&#xE31;&#xE19;
-    option(value='3') 1 &#xE2D;&#xE32;&#xE17;&#xE34;&#xE15;&#xE22;&#xE4C;
-script.
-  var x, i, j, l, ll, selElmnt, a, b, c;
-  /*look for any elements with the class "custom-select":*/
-  x = document.getElementsByClassName("custom-select4");
-  l = x.length;
-  for (i = 0; i < l; i++) {
-  selElmnt = x[i].getElementsByTagName("select")[0];
-  ll = selElmnt.length;
-  /*for each element, create a new DIV that will act as the selected item:*/
-  a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  x[i].appendChild(a);
-  /*for each element, create a new DIV that will contain the option list:*/
-  b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
-  for (j = 1; j < ll; j++) {
-  /*for each option in the original select element,
-  create a new DIV that will act as an option item:*/
-  c = document.createElement("DIV");
-  c.innerHTML = selElmnt.options[j].innerHTML;
-  c.addEventListener("click", function(e) {
-  /*when an item is clicked, update the original select box,
-  and the selected item:*/
-  var y, i, k, s, h, sl, yl;
-  s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-  sl = s.length;
-  h = this.parentNode.previousSibling;
-  for (i = 0; i < sl; i++) {
-  if (s.options[i].innerHTML == this.innerHTML) {
-  s.selectedIndex = i;
-  h.innerHTML = this.innerHTML;
-  y = this.parentNode.getElementsByClassName("same-as-selected");
-  yl = y.length;
-  for (k = 0; k < yl; k++) {
-  y[k].removeAttribute("class");
-  }
-  this.setAttribute("class", "same-as-selected");
-  break;
-  }
-  }
-  h.click();
-  });
-  b.appendChild(c);
-  }
-  x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
-  /*when the select box is clicked, close any other select boxes,
-  and open/close the current select box:*/
-  e.stopPropagation();
-  closeAllSelect(this);
-  this.nextSibling.classList.toggle("select-hide");
-  this.classList.toggle("select-arrow-active");
-  });
-  }
-  function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
-  var x, y, i, xl, yl, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
-  xl = x.length;
-  yl = y.length;
-  for (i = 0; i < yl; i++) {
-  if (elmnt == y[i]) {
-  arrNo.push(i)
-  } else {
-  y[i].classList.remove("select-arrow-active");
-  }
-  }
-  for (i = 0; i < xl; i++) {
-  if (arrNo.indexOf(i)) {
-  x[i].classList.add("select-hide");
-  }
-  }
-  }
-  document.addEventListener("click", closeAllSelect);
 // -----------------------------ส่วนของ button submit ------------------------------------------------
 label.container
   button.button-submit
     b Submit
 // -----------------------------ส่วนของ QR CODE Popup ------------------------------------------------
-button.open-button(onclick='openForm()') Open QR Code
+button.open-button(onclick='openForm()') Line Token
 #myForm.form-popup
-  form.form-container(action='/action_page.php')
-    font(size='10') QR CODE
-    p ***QR code &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;***
-    img(src='img/test.jpg' width='250px ' height='250px ' vspace='20' hspace='40')
+  form(class="form-signin")
+    p
+      | Token 
+      input(type="text" name="token" id="token" class="form-control" placeholder="Token")
+    a(href="https://notify-bot.line.me/my/", class="btn btn-link") Don't have an Token?
+    button.btn.btn-primary.form-control.btn-warning(type='submit ') Submit
     button.btn.cancel(type='button' onclick='closeForm()') Close
 script.
   function openForm() {
@@ -923,4 +834,3 @@ script.
   function closeForm() {
   document.getElementById("myForm").style.display = "none";
   }
-

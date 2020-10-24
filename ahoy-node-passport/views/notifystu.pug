@@ -909,12 +909,14 @@ label.container
   button.button-submit
     b Submit
 // -----------------------------ส่วนของ QR CODE Popup ------------------------------------------------
-button.open-button(onclick='openForm()') Open QR Code
+button.open-button(onclick='openForm()') Line Token
 #myForm.form-popup
-  form.form-container(action='/action_page.php')
-    font(size='10') QR CODE
-    p ***QR code &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE41;&#xE08;&#xE49;&#xE07;&#xE40;&#xE15;&#xE37;&#xE2D;&#xE19;***
-    img(src='img/test.jpg' width='250px ' height='250px ' vspace='20' hspace='40')
+  form(class="form-signin")
+    p
+      | Token 
+      input(type="text" name="token" id="token" class="form-control" placeholder="Token")
+    a(href="https://notify-bot.line.me/my/", class="btn btn-link") Don't have an Token?
+    button.btn.btn-primary.form-control.btn-warning(type='submit ') Submit
     button.btn.cancel(type='button' onclick='closeForm()') Close
 script.
   function openForm() {

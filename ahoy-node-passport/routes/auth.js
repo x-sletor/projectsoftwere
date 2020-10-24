@@ -46,32 +46,4 @@ router.post('/login', async(req, res) => {
     }
 })
 
-router.post('/', function(req, res, next) {
-    const { token } = req.body;
-    const { message } = req.body;
-
-    request({
-        method: 'POST',
-        uri: 'https://notify-api.line.me/api/notify',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        auth: {
-            'bearer': token
-        },
-        form: {
-            message: message
-        }
-    }, (err, httpResponse, body) => {
-        if (err) {
-            console.log(err);
-        } else {
-            res.json({
-                httpResponse: httpResponse,
-                body: body
-            });
-        }
-    });
-});
-
 module.exports = router

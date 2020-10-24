@@ -46,13 +46,13 @@ router.get('/registerteacher', (req, res) => {
 
 // login
 router.get('/login', (req, res) => {
-    res.render('login')
+    res.render('login');
 });
 router.get('/loginstaff', (req, res) => {
-    res.render('loginstaff')
+    res.render('loginstaff');
 });
 router.get('/loginteacher', (req, res) => {
-    res.render('loginteacher')
+    res.render('loginteacher');
 });
 
 // main index
