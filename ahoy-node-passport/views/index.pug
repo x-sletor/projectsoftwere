@@ -76,6 +76,35 @@ html(lang="en")
       box-shadow: 0 5px #666;
       transform: translateY(4px);
       }
+
+      .container .button-logout {
+      position: relative;
+      right: -55%;
+      bottom: -40px;
+      border: none;
+      border-radius: 12px;
+      width: 10%;
+      height: 52px;
+      margin: auto;
+      margin-bottom: 100px;
+      padding: 15px 25px;
+      text-align: center;
+      font-size: 25px;
+      cursor: pointer;
+      outline: none;
+      font-family: 'Arial';
+      color: #ffffff;
+      box-shadow: 0 9px #999;
+      background-color: #FC3A7E;
+      }
+      .button-logout:hover {
+      box-shadow: #d7bde2;
+      }
+      .button-logout:active {
+      background-color: #f7bd42;
+      box-shadow: 0 5px rgb(124, 123, 123);
+      transform: translateY(4px);
+      }
   body
 
     .container
@@ -83,6 +112,9 @@ html(lang="en")
         button.button-student
           b ตารางเรียน
       a(href='/tableexamstudent')
-        // ลิ้งเจมส์ ลิ้งค์ไปหน้าตารางสอบ
+        // ลิ้งเจมส์ ลิ้งค์ไปหน้าตารางสบ
         button.button-exam
           b ตารางสอบ
+      a(href='/status')
+        button.button-logout
+          b Logout

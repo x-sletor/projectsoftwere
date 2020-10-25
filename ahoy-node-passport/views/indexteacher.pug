@@ -75,6 +75,35 @@ head
     box-shadow: 0 5px #666;
     transform: translateY(4px);
     }
+
+    .container .button-logout {
+      position: relative;
+      right: -55%;
+      bottom: -40px;
+      border: none;
+      border-radius: 12px;
+      width: 10%;
+      height: 52px;
+      margin: auto;
+      margin-bottom: 100px;
+      padding: 15px 25px;
+      text-align: center;
+      font-size: 25px;
+      cursor: pointer;
+      outline: none;
+      font-family: 'Arial';
+      color: #ffffff;
+      box-shadow: 0 9px #999;
+      background-color: #FC3A7E;
+      }
+      .button-logout:hover {
+      box-shadow: #d7bde2;
+      }
+      .button-logout:active {
+      background-color: #f7bd42;
+      box-shadow: 0 5px rgb(124, 123, 123);
+      transform: translateY(4px);
+      }
 .container
   a(href='/tableteach')
     button.button-teaching
@@ -83,34 +112,7 @@ head
     // ลิ้งเจมส์ ลิ้งค์ไปหน้าตารางสอบ
     button.button-exam
       b &#xE15;&#xE32;&#xE23;&#xE32;&#xE07;&#xE2A;&#xE2D;&#xE1A;
-
-
-<!--doctype html
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  meta(http-equiv='X-UA-Compatible' content='ie=edge')
-  title Main Menu of Teacher
-  style.
-    .container {
-    display: block;
-    max-width: 840px;
-    margin: 0 auto;
-    }
-    h2 {
-    font-size: 6rem;
-    color: #cc33ff;
-    }
-    .subheading {
-    color: #222;
-    font-size: 2rem;
-    }
-    p {
-    color: #222;
-    }
-.container
-  h2 Main Menu of Teacher
-  p.subheading This is Main Menu of Teacher
-  p
-    | Project Softwere Engineering
-  a(href='/notify') Go to edit notify-->
+  
+  a(href='/status')
+        button.button-logout
+          b Logout

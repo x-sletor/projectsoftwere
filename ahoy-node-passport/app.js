@@ -3,14 +3,8 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-// const fs = require('fs');
 const indexRouter = require('./routes/index');
-//const indexStaffRouter = require('./routes/indexstaff');
-//const indexTeacherRouter = require('./routes/indexteacher')
 const usersRouter = require('./routes/users');
-//const staffsRouter = require('./routes/staffs');
-//const teachersRouter = require('./routes/teachers');
-//const notifyRouter = require('./routes/notify');
 const authRouter = require('./routes/auth');
 const authstaffRouter = require('./routes/authstaff');
 const authteaRouter = require('./routes/authtea');
@@ -41,15 +35,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-//app.use('/indexstaff', indexStaffRouter);
-//app.use('/indexteacher', indexTeacherRouter);
 app.use('/users', usersRouter);
-//app.use('/staffs', staffsRouter);
-//app.use('/teachers', teachersRouter);
 app.use('/auth', authRouter);
 app.use('/authstaff', authstaffRouter);
 app.use('/authtea', authteaRouter);
-//app.use('/notifystu', notification)
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     next(createError(404));

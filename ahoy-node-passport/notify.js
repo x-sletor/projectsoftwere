@@ -2,8 +2,9 @@ const isReachable = require('is-reachable');
 const cron = require('node-cron');
 const LineAPI = require('line-api');
 const notify = new LineAPI.Notify({
-    token: "uUHOq7cRqL55KA5z5K9ZaXVPT6sR7PnZAE0g4U3ToQh"
-})
+        token: "uUHOq7cRqL55KA5z5K9ZaXVPT6sR7PnZAE0g4U3ToQh"
+    })
+    // Som "PCgs2yAVVZUUcKev9olUT2gmLvwqWSOh2g5mPK77dPX"
 
 // สั่งให้มันทำงานทุกๆ กี่นาที
 cron.schedule('*/1 * * * *', function() {
